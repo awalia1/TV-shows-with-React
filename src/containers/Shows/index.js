@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import ShowsList from '../ShowsList';
+import ShowsList from '../../components/ShowsList';
+import Intro from '../../components/Intro';
 import Loader from '../../components/Loader';
 
 class Shows extends Component {
@@ -21,6 +22,7 @@ class Shows extends Component {
         const {shows, showName, isFetching} = this.state;
         return (
             <div> 
+                <Intro message = "Here you can find your favorite shows."/>
                 <div>
                     <input 
                         value= {showName}

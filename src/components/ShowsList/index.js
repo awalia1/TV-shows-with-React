@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import './index.css'
+import {Link} from 'react-router-dom'
 
 const ShowsListItem = ({shows}) => (
     <li>
-        {shows.show.name}
+        <Link to = {`/show/${shows.show.id}`}>
+            {shows.show.name}
+        </Link>
     </li>
 )
 
